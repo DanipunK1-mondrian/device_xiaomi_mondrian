@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)
 
+# Google Camera
+$(call inherit-product-if-exists, vendor/Gcam/config.mk)
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResMondrian \
