@@ -13,6 +13,9 @@ $(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)
 # Google Camera
 $(call inherit-product-if-exists, vendor/Gcam/config.mk)
 
+# BCR
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResMondrian \
